@@ -1,0 +1,117 @@
+.barrita{
+    text-align: left;
+    position: fixed;
+    top: 5px;
+  }
+
+  .menu-bottom{
+    cursor:pointer;
+  }
+  
+  .menu-item-close{
+    background-color:transparent;
+    border: none;
+  }
+  
+@keyframes reducetime {
+    0% {
+    width: 0;
+    }
+    
+    100% {
+        width: 30%;
+    }
+}
+@keyframes reducetimeback {
+    0% {
+      left: 0;
+      width: 30%;
+    }
+    
+    100% {
+      left: -30%;
+      width: 0%;
+    }
+}
+
+.list-menu{
+  display:flex;
+  flex-flow: column;
+  position: fixed;
+  z-index: 1000;
+  left:0;
+  top: 57px;
+  width: 30%;
+  margin:0;
+  padding:0;
+  animation-name: reducetime;
+  animation-duration: 0.6s;
+}
+
+#close {
+  animation-name: reducetimeback;
+  animation-duration: 1s;
+  left: -30%;
+  width: 0%;
+}
+
+li{
+  position: relative;
+  display: inline-block;
+  cursor:pointer;  
+  padding: 20px 10px;
+  font-size:20px;
+  text-decoration: none;
+  background-color: #f3f3f3 ;
+  color:#000;
+  border-bottom: 1px solid #bfbcbc;
+}
+
+li a,li a:hover {
+  position: relative;
+  color:#000; 
+  text-decoration:none; 
+}
+
+
+@media (max-width: 600px) {
+
+  @keyframes reducetimeResponsive {
+      0% {
+      width: 0;
+      }
+      
+      100% {
+          width: 60%;
+      }
+  }
+  .list-menu{
+    display:flex;
+    flex-flow: column;
+    position: fixed;
+    left:0;
+    top: 57px;
+    width: 60%;
+    margin:0;
+    padding:0;
+    animation-name: reducetimeResponsive;
+    animation-duration: 0.6s;
+  }
+  @keyframes reducetimeback {
+      0% {
+        left: 0;
+        width: 60%;
+      }
+      
+      100% {
+        left: -60%;
+        width: 0%;
+      }
+  }
+  #close {
+    animation-name: reducetimeback;
+    animation-duration: 1s;
+    left: -60%;
+    width: 0%;
+  }
+}
