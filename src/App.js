@@ -52,9 +52,9 @@ class App extends Component {
           </div>
         
           <header className="App-header">
-          { !this.state.isOpen &&
+       
             <img src={logo} className="App-logo" alt="logo" />
-          }
+     
             <h1 className="App-title">Hola Ram</h1>
           </header>
           <p className="App-intro">

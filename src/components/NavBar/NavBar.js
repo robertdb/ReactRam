@@ -26,7 +26,7 @@ class NavBar extends Component {
 
     return (
       <div>
-        <div className="barrita">
+        <div className="barrita"  style={{backgroundColor:this.props.bg}}>
           <img
             className="menu-bottom"
             onClick={() => manageMenu() } 

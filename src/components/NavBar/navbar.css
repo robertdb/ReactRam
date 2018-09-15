@@ -1,7 +1,9 @@
 .barrita{
     text-align: left;
     position: fixed;
-    top: 5px;
+    top: 0px;
+    width: 100%;
+    z-index:100;
   }
 
   .menu-bottom{

@@ -25,7 +25,7 @@ class Layout extends React.Component {
 
     return (
         <div>
-            <NavBar activeNavbar={activeNavbar} manageMenu={this.handleChangeMenu} isOpen={menuOpen}/>    
+            <NavBar activeNavbar={activeNavbar} manageMenu={this.handleChangeMenu} isOpen={menuOpen} bg="rgb(234, 234, 234)"/>    
             <div onClick={() => this.setState({menuOpen:false})}>
                 {children}
             </div>  
